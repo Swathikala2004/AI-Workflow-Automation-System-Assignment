@@ -1,0 +1,135 @@
+.history-container {
+  padding: 40px;
+  background: #f5f7fb;
+  min-height: calc(100vh - 70px);
+}
+
+.history-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.table-container {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  overflow-x: auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #2563eb;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+  background: #f9fafb;
+}
+
+.status-review {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.status-completed {
+  background: #dcfce7;
+  color: #16a34a;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.no-data {
+  text-align: center;
+  margin-top: 20px;
+  color: #6b7280;
+}
+.review-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.review-btn:hover {
+  background: #1d4ed8;
+}
+.review-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.review-btn:hover {
+  background: #1d4ed8;
+}
+
+.status-review {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.status-completed {
+  color: #16a34a;
+  font-weight: bold;
+}
+.search-box {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.history-summary {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #475569;
+}
+
+.done-text {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+tbody tr {
+  transition: 0.3s;
+}
+
+tbody tr:hover {
+  background: #eff6ff;
+}
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
