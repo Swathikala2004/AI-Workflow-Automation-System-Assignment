@@ -23,9 +23,18 @@ function Dashboard() {
   const fetchDashboard = async () => {
     try {
       const res = await api.get("/dashboard");
+
       setData(res.data);
     } catch (error) {
-      console.log(error);
+      console.log("Dashboard Error:", error);
+
+      // Fallback data when backend is unavailable
+      setData({
+        totalUploads: 0,
+        validationFailures: 0,
+        completed: 0,
+        totalQuantity: 0,
+      });
     }
   };
 
@@ -63,10 +72,7 @@ function Dashboard() {
     },
   ];
 
-  const COLORS = [
-    "#22c55e",
-    "#ef4444",
-  ];
+  const COLORS = ["#22c55e", "#ef4444"];
 
   return (
     <div className="dashboard-container">
@@ -142,6 +148,20 @@ function Dashboard() {
           </ResponsiveContainer>
         </div>
       </div>
+
+      {data.totalUploads === 0 && (
+        <div
+          style={{
+            textAlign: "center",
+            marginTop: "20px",
+            color: "#666",
+          }}
+        >
+          <p>
+            No dashboard data available.
+          </p>
+        </div>
+      )}
     </div>
   );
 }
